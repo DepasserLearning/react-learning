@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Header from "./components/header";
+import Home from "./components/home";
 import "./App.css";
 
 function App() {
@@ -42,7 +43,8 @@ function App() {
   };
   return (
     <>
-      <Header title="Todo List" />
+    <Home />
+      {/* <Header title="Todo List" />
       <input
         type="text"
         name="first"
@@ -60,7 +62,7 @@ function App() {
         <div key={todo.id}>
           <label>{todo.title}</label>
         </div>
-      ))}
+      ))} */}
     </>
   );
 }
